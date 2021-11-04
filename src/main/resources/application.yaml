@@ -1,0 +1,19 @@
+# Microprofile server properties
+server:
+  port: 8080
+  host: 0.0.0.0
+
+# Application properties
+app:
+  greeting: Hello
+
+## Datasource Config
+javax:
+  sql:
+    DataSource:
+      example:
+        dataSourceClassName: com.mysql.cj.jdbc.MysqlDataSource
+        dataSource:
+          url: jdbc:mysql://localhost:3306/hvtest?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+          user: root
+          password: 12345
